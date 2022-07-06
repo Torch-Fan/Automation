@@ -24,39 +24,9 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: GlaDos fanqiliang_mail checkin
         run: |
-          curl --location --request POST 'https://glados.rocks/api/user/checkin'
-              --header 'authority: glados.rocks' 
-              --header 'Accept: application/json, text/plain, */*' 
-              --header 'Accept-Language: zh,en-US;q=0.9,en;q=0.8,zh-CN;q=0.7'
-              --header 'content-type:  application/json;charset=UTF-8' 
-              --header 'cookie:  _ga=GA1.2.2053211556.1656627181; koa:sess=eyJ1c2VySWQiOjE3MjQ1MCwiX2V4cGlyZSI6MTY4MjU0NzIwOTMzNSwiX21heEFnZSI6MjU5MjAwMDAwMDB9; koa:sess.sig=ZgYJvt-WqygKVG7hrhASassuVa0; Cookie=enabled; Cookie.sig=lbtpENsrE0x6riM8PFTvoh9nepc; __stripe_mid=d2c2262b-94ec-467b-a182-18c5790b4a93473e8a; _gid=GA1.2.1510863377.1656996506; __cf_bm=uKcZvgc6xcla4cmE7aNb0HcEA6crIgKns6pHvTIoj.g-1657070265-0-ASPIkuliK+QL7MV4REqu2roXPDoZ/H5stycip21B/IZK784Y7KZVbrD+IpHSN3CNLniKlicSCTZ+54SrMRYVeKU859s52El3tPoZx16CiMjaJnHu4UrTqM5xafMI6g6A3A==' 
-              --header 'dnt:  1' 
-              --header 'origin:  https://glados.rocks' 
-              --header 'sec-ch-ua:  ".Not/A)Brand";v="99", "Google Chrome";v="103", "Chromium";v="103"' 
-              --header 'sec-ch-ua-mobile:  ?0' 
-              --header 'sec-ch-ua-platform:  "Windows"' 
-              --header 'sec-fetch-dest:  empty' 
-              --header 'sec-fetch-mode:  cors' 
-              --header 'sec-fetch-site:  same-origin' 
-              --header 'user-agent:  Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36' 
-              --data-raw '{"token":"glados.network"}'
+          curl 'https://glados.rocks/api/user/checkin'  -H 'authority: glados.rocks'  -H 'accept: application/json, text/plain, */*'   -H 'accept-language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6'   -H 'content-type: application/json;charset=UTF-8'   -H 'cookie: _ga=GA1.2.1555122225.1657063891; _gid=GA1.2.156404615.1657063891; koa:sess=eyJ1c2VySWQiOjE3NjM3NiwiX2V4cGlyZSI6MTY4Mjk4MzkyMDI1MiwiX21heEFnZSI6MjU5MjAwMDAwMDB9; koa:sess.sig=76spNswSSXqCu3pOZOEHMKUaD2M; __cf_bm=VCEpbd0g05fKNfZfo2nYqTpGga5el5GqpoeLx3Mbdfo-1657071012-0-ASJo8IwhEywFrG7nF4ZeaNVYgP6cPyY6OxbkSRP7zHwCpLd4AsCfmHayNu8hDC0cUO7ke8+6dqODmBgH37Sbpga1V7I9CVncE9FuINqV0eQXzwRpSeD8FGxbV1AFnV5Kuw==; _gat_gtag_UA_104464600_2=1'   -H 'origin: https://glados.rocks'   -H 'sec-ch-ua: " Not;A Brand";v="99", "Microsoft Edge";v="103", "Chromium";v="103"'   -H 'sec-ch-ua-mobile: ?0'   -H 'sec-ch-ua-platform: "Windows"'   -H 'sec-fetch-dest: empty'   -H 'sec-fetch-mode: cors'   -H 'sec-fetch-site: same-origin'   -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.66 Safari/537.36 Edg/103.0.1264.44'   --data-raw '{"token":"glados.network"}'   --compressed
 
       # Runs a set of commands using the runners shell
       - name: GlaDos 1712884_mail checkin
         run: |
-          curl --location --request POST 'https://glados.rocks/api/user/checkin' 
-              --header 'authority: glados.rocks' 
-              --header 'Accept: application/json, text/plain, */*' 
-              --header 'Accept-Language: zh,en-US;q=0.9,en;q=0.8,zh-CN;q=0.7' 
-              --header 'content-type:  application/json;charset=UTF-8' 
-              --header 'cookie:  _ga=GA1.2.1555122225.1657063891; _gid=GA1.2.156404615.1657063891; koa:sess=eyJ1c2VySWQiOjE3NjM3NiwiX2V4cGlyZSI6MTY4Mjk4MzkyMDI1MiwiX21heEFnZSI6MjU5MjAwMDAwMDB9; koa:sess.sig=76spNswSSXqCu3pOZOEHMKUaD2M; __cf_bm=VCEpbd0g05fKNfZfo2nYqTpGga5el5GqpoeLx3Mbdfo-1657071012-0-ASJo8IwhEywFrG7nF4ZeaNVYgP6cPyY6OxbkSRP7zHwCpLd4AsCfmHayNu8hDC0cUO7ke8+6dqODmBgH37Sbpga1V7I9CVncE9FuINqV0eQXzwRpSeD8FGxbV1AFnV5Kuw==; _gat_gtag_UA_104464600_2=1' 
-              --header 'dnt:  1' 
-              --header 'origin:  https://glados.rocks' 
-              --header 'sec-ch-ua:  ".Not/A)Brand";v="99", "Google Chrome";v="103", "Chromium";v="103"' 
-              --header 'sec-ch-ua-mobile:  ?0' 
-              --header 'sec-ch-ua-platform:  "Windows"' 
-              --header 'sec-fetch-dest:  empty' 
-              --header 'sec-fetch-mode:  cors' 
-              --header 'sec-fetch-site:  same-origin' 
-              --header 'user-agent:  Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36' 
-              --data-raw '{"token":"glados.network"}'
+          curl 'https://glados.rocks/api/user/checkin'   -H 'authority: glados.rocks'   -H 'accept: application/json, text/plain, */*'   -H 'accept-language: zh,en-US;q=0.9,en;q=0.8,zh-CN;q=0.7'   -H 'content-type: application/json;charset=UTF-8'   -H 'cookie: _ga=GA1.2.2053211556.1656627181; koa:sess=eyJ1c2VySWQiOjE3MjQ1MCwiX2V4cGlyZSI6MTY4MjU0NzIwOTMzNSwiX21heEFnZSI6MjU5MjAwMDAwMDB9; koa:sess.sig=ZgYJvt-WqygKVG7hrhASassuVa0; Cookie=enabled; Cookie.sig=lbtpENsrE0x6riM8PFTvoh9nepc; __stripe_mid=d2c2262b-94ec-467b-a182-18c5790b4a93473e8a; _gid=GA1.2.1510863377.1656996506; __cf_bm=uKcZvgc6xcla4cmE7aNb0HcEA6crIgKns6pHvTIoj.g-1657070265-0-ASPIkuliK+QL7MV4REqu2roXPDoZ/H5stycip21B/IZK784Y7KZVbrD+IpHSN3CNLniKlicSCTZ+54SrMRYVeKU859s52El3tPoZx16CiMjaJnHu4UrTqM5xafMI6g6A3A=='   -H 'dnt: 1'   -H 'origin: https://glados.rocks'   -H 'sec-ch-ua: ".Not/A)Brand";v="99", "Google Chrome";v="103", "Chromium";v="103"'   -H 'sec-ch-ua-mobile: ?0'   -H 'sec-ch-ua-platform: "Windows"'   -H 'sec-fetch-dest: empty'   -H 'sec-fetch-mode: cors'   -H 'sec-fetch-site: same-origin'   -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36'   --data-raw '{"token":"glados.network"}'   --compressed
